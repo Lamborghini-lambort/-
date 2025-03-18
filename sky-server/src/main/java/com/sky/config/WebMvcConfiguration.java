@@ -27,7 +27,7 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
 
     /**
      * 注册自定义拦截器
-     *
+     *  拦截用户的所有请求，排除登录请求
      * @param registry
      */
     protected void addInterceptors(InterceptorRegistry registry) {
@@ -58,7 +58,7 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     }
 
     /**
-     * 设置静态资源映射
+     * 设置静态资源映射——（kni4j相关的接口文档）
      * @param registry
      */
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
